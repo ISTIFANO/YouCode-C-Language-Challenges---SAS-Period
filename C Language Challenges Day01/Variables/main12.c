@@ -12,7 +12,6 @@ int main() {
         printf("Erreur : le nombre doit être un entier à quatre chiffres.\n");
         return 1; 
     }
-
     // Convertir 
     sprintf(nombreStr, "%d", nombre);
 

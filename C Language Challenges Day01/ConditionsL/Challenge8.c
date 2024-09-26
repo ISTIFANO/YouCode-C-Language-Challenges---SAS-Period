@@ -10,17 +10,16 @@ int main() {
     // Verification
     if (moyenne < 10) {
 
-         printf("Mention: Recale\n");
+ printf("Mention: Recale\n");
 
     } else if (moyenne >= 10 && moyenne < 12) {
 
-        printf("Passable\n");
-       } else if (moyenne >= 12 && moyenne < 14) {
-        printf("Assez Bien\n");
-
+ printf("Passable\n");
+    } else if (moyenne >= 12 && moyenne < 14) {
+ printf("Assez Bien\n");
     } else if (moyenne >= 14 && moyenne < 16) {
         
-        printf("Bien\n");
+ printf("Bien\n");
        } else {
 
         printf("Tres Bien\n");

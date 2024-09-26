@@ -18,6 +18,7 @@ int main() {
     sscanf(date, "%d/%d/%d", &jour, &mois, &annee);
 
     // Affichage
+    
     printf("%02d-%s-%d\n", jour, nom[mois - 1], annee);
 
     return 0;
