@@ -1,24 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    float nombre;
+ float nombre;
     
-    // saisir un nombre
-    printf("Entrez un nombre: ");
-    scanf("%f", &nombre);
+ // saisir un nombre
+ printf("Entrez un nombre: ");
+ scanf("%f", &nombre);
     
-    // Verification
+ // Verification
 
-    if (nombre > 0) {
-        
-        printf("Le nombre %.2f est positif.\n", nombre);
+ if (nombre > 0) {
+      
+ printf("Le nombre %.2f est positif.\n", nombre);
 
-    } else if (nombre < 0) {
+} else if (nombre < 0) {
 
-        printf("Le nombre %.2f est negatif.\n", nombre);
-    } else {
-        printf("Le nombre est nul.\n");
-    }
+   printf("Le nombre %.2f est negatif.\n", nombre);
+  } else {
+  printf("Le nombre est nul.\n");
+ }
     
     return 0;
 }
