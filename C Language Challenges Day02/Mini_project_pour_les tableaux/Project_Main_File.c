@@ -15,16 +15,16 @@ int main() {
 
     while (reponse == 'y' || reponse == 'Y') {
         printf("\n\n");
-        printf("========--**** GESTION D'UN STOCK DE LIVRES ****--========\n");
-        printf("=========================================================\n");
-        printf("| 1 ********* Ajouter un livre au stock\n");
-        printf("| 2 ********* Afficher tous les livres disponibles\n");
-        printf("| 3 ********* Rechercher un livre par son titre\n");
-        printf("| 4 ********* Mettre a jour la quantite d'un livre\n");
-        printf("| 5 ********* Supprimer un livre du stock\n");
-        printf("| 6 ********* Afficher le nombre total de livres en stock\n");
-        printf("| 7 ********* Quitter\n");
-        printf("=========================================================\n");
+        printf("**** GESTION D UN STOCK DE LIVRES ****\n");
+        printf("***********************************************\n");
+        printf("1 ********* Ajouter un livre au stock\n");
+        printf("2 ********* Afficher tous les livres disponibles\n");
+        printf("3 ********* Rechercher un livre par son titre\n");
+        printf("4 ********* Mettre a jour la quantite d'un livre\n");
+        printf("5 ********* Supprimer un livre du stock\n");
+        printf("6 ********* Afficher le nombre total de livres en stock\n");
+        printf("7 ********* \t Quitter\n");
+        printf("***********************************************=\n");
 
         printf("\n\t=> Choisissez une option : ");
         scanf("%d", &op);
