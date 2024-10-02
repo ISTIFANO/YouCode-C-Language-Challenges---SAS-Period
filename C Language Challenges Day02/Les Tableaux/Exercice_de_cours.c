@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -63,3 +64,23 @@ int main() {
     printf("Le plus grand nombre est: %.2f\n", max);
     return 0;
 }
+=======
+#include<stdio.h>
+
+int main(){
+int i,resultat,arr[32],nb;
+printf("donner Le nembre des  elements");
+scanf("%d",&nb);
+printf("donner les nembres qui voulez aditionner :");
+for (i = 0; i <nb; i++){
+        scanf("%d",&arr[i]);
+
+        resultat+=arr[i];
+}
+printf("la somme des valeur qui tu ea donner sont %d ",resultat);
+
+
+
+    return 0;
+}
+>>>>>>> b03e8a4c94d79f1f20eea1431a789ec1f59d54cf
