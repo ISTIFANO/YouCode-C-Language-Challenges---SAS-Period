@@ -11,7 +11,11 @@ typedef struct {
 } Contact;
 
 Contact contacts[MAX_CONTACTS];
+<<<<<<< HEAD
 int nb = 5;
+=======
+int nb_C = 5;
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
 
 void initialize_contacts() {
     strcpy(contacts[0].nom, "Alice");
@@ -73,9 +77,15 @@ void saisir_contact(Contact contact) {
 }
 
 void ajouter_contact_simple() {
+<<<<<<< HEAD
     if (nb < MAX_CONTACTS) {
         saisir_contact(contacts[nb]);
         nb++;
+=======
+    if (nb_C < MAX_CONTACTS) {
+        saisir_contact(contacts[nb_C]);
+        nb_C++;
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
     } else {
         printf("Le carnet de contacts est plein.\n");
     }
@@ -85,21 +95,36 @@ void ajouter_contact_multiple() {
     int count;
     printf("Combien de contacts voulez-vous ajouter ? ");
     scanf("%d", &count);
+<<<<<<< HEAD
     if (count <= 0 || count + nb > MAX_CONTACTS) {
+=======
+    if (count <= 0 || count + nb_C > MAX_CONTACTS) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         printf("Erreur: nombre de contacts invalide ou depassement de capacite.\n");
         return;
     }
     for (int i = 0; i < count; i++) {
+<<<<<<< HEAD
         if (nb < MAX_CONTACTS) {
             printf("Ajout du contact %d:\n", i + 1);
             saisir_contact(contacts[nb]);
             nb++;
+=======
+        if (nb_C < MAX_CONTACTS) {
+            printf("Ajout du contact %d:\n", i + 1);
+            saisir_contact(contacts[nb_C]);
+            nb_C++;
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         }
     }
 }
 
 void afficher_contacts() {
+<<<<<<< HEAD
     for (int i = 0; i < nb; i++) {
+=======
+    for (int i = 0; i < nb_C; i++) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         printf("Nom: %s, Telephone: %s, Email: %s\n", 
                contacts[i].nom, 
                contacts[i].telephone, 
@@ -109,7 +134,11 @@ void afficher_contacts() {
 
 void afficher_statistiques() {
     int count_06 = 0, count_07 = 0;
+<<<<<<< HEAD
     for (int i = 0; i < nb; i++) {
+=======
+    for (int i = 0; i < nb_C; i++) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         if (strncmp(contacts[i].telephone, "06", 2) == 0) {
             count_06++;
         } else if (strncmp(contacts[i].telephone, "07", 2) == 0) {
@@ -124,7 +153,11 @@ void modifier_contact() {
     char nom[50];
     printf("Entrez le nom du contact à modifier: ");
     scanf("%s", nom);
+<<<<<<< HEAD
     for (int i = 0; i < nb; i++) {
+=======
+    for (int i = 0; i < nb_C; i++) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         if (strcmp(contacts[i].nom, nom) == 0) {
             saisir_contact(contacts[i]);
             return;
@@ -137,16 +170,27 @@ void supprimer_contact() {
     char nom[50];
     printf("Entrez le nom du contact à supprimer: ");
     scanf("%s", nom);
+<<<<<<< HEAD
     for (int i = 0; i < nb; i++) {
+=======
+    for (int i = 0; i < nb_C; i++) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         if (strcmp(contacts[i].nom, nom) == 0) {
             char confirmation;
             printf("Êtes-vous sûr de vouloir supprimer le contact %s ? (o/n): ", nom);
             scanf(" %c", &confirmation);
             if (confirmation == 'o' || confirmation == 'O') {
+<<<<<<< HEAD
                 for (int j = i; j < nb - 1; j++) {
                     contacts[j] = contacts[j + 1];
                 }
                 nb--;
+=======
+                for (int j = i; j < nb_C - 1; j++) {
+                    contacts[j] = contacts[j + 1];
+                }
+                nb_C--;
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
                 printf("Contact supprime.\n");
             } else {
                 printf("Suppression annulee.\n");
@@ -161,7 +205,11 @@ void rechercher_contact_par_nom() {
     char nom[50];
     printf("Entrez le nom du contact à rechercher: ");
     scanf("%s", nom);
+<<<<<<< HEAD
     for (int i = 0; i < nb; i++) {
+=======
+    for (int i = 0; i < nb_C; i++) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         if (strcmp(contacts[i].nom, nom) == 0) {
             printf("Nom: %s, Telephone: %s, Email: %s\n", 
                    contacts[i].nom, 
@@ -175,9 +223,15 @@ void rechercher_contact_par_nom() {
 
 void rechercher_contact_par_id() {
     int id;
+<<<<<<< HEAD
     printf("Entrez l'ID (index) du contact à rechercher (0 à %d): ", nb - 1);
     scanf("%d", &id);
     if (id >= 0 && id < nb) {
+=======
+    printf("Entrez l'ID (index) du contact à rechercher (0 à %d): ", nb_C - 1);
+    scanf("%d", &id);
+    if (id >= 0 && id < nb_C) {
+>>>>>>> adfcb9ff17516886551dc9a9f56f6c35e7454d98
         printf("Nom: %s, Telephone: %s, Email: %s\n", 
                contacts[id].nom, 
                contacts[id].telephone, 
